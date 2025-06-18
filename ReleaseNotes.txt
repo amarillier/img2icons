@@ -1,0 +1,10 @@
+Release notes
+
+0.0.NEXT
+- Possible GUI
+- Possible add to allow user specifying .icns sizes required
+-
+
+
+0.0.1
+- initial checkin
