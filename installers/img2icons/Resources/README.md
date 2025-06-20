@@ -5,8 +5,8 @@ only for now, and may remain that way.
 If I add a GUI component, below will apply
 preferences stored via fyne preferences API land in
 ~/Library/Preferences/fyne/com.github.amarillier.img2icons/preferences.json
-~\AppData\Roaming\fyne\com.github.amarillier.img2icons\preferences.json
-MacOS resource location (sounds and backgrounds): /Applications/img2icons.app/Contents/Resources
+~\AppData\Roaming\fyne\com.github.amarillier.Img2icons\preferences.json
+MacOS resource location (sounds and backgrounds): /Applications/Img2icons.app/Contents/Resources
 Theme preferences are in ~/Library/Preferences/fyne/settings.json
 
 
