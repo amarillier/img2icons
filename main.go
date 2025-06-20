@@ -24,7 +24,7 @@ import (
 	"github.com/tonyhb/goicns"
 )
 
-var appVersion = "0.0.1" // see FyneApp.toml
+var appVersion = "0.1.0" // see FyneApp.toml
 var appAuthor = "Allan Marillier"
 var appName = "KrankyBearImg2Icons"
 var appCopyright = "Copyright (c) Allan Marillier, 2024-" + strconv.Itoa(time.Now().Year())

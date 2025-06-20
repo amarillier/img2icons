@@ -64,17 +64,17 @@ linuxarm64:
 .PHONY:linuxarm64
 
 macamd64:
-	# GOOS=darwin GOARCH=amd64 CGO_ENABLED=1 go build -ldflags="-w -s" -o bin/MacOSAMD64/
+	GOOS=darwin GOARCH=amd64 CGO_ENABLED=1 go build -ldflags="-w -s" -o bin/MacOSAMD64/
 	# ./setIcon.sh KrankyBearHardHat.png bin/MacOSAMD64/KrankyBearImg2Icons
 	./mkicns.sh Resources/Images/KrankyBearHardHat.png
-	./dmgbuildIntel.sh
+	# ./dmgbuildIntel.sh
 .PHONY:macamd64
 
 macarm64:
-	# GOOS=darwin GOARCH=arm64 CGO_ENABLED=1 go build -ldflags="-w -s" -o bin/MacOSARM64/
+	GOOS=darwin GOARCH=arm64 CGO_ENABLED=1 go build -ldflags="-w -s" -o bin/MacOSARM64/
 	# ./setIcon.sh KrankyBearHardHat.png bin/MacOSAMD64/KrankyBearImg2Icons
 	./mkicns.sh Resources/Images/KrankyBearHardHat.png
-	./dmgbuildARM.sh
+	# ./dmgbuildARM.sh
 .PHONY:macarm64
 
 winamd64:
@@ -91,7 +91,7 @@ winarm64:
 buildall: linuxamd64 linuxarm64 macamd64 macarm64 winamd64 winarm64
 .PHONY:buildall
 
-buildsupported supported: macamd64 macarm64 winamd64
+buildsupported supported: macamd64 macarm64 winamd64 linuxamd64 linuxarm64
 .PHONY:buildsupported
 
 dmg: 
