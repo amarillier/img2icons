@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "img2icons"
-#define MyAppVersion "0.1.0"
+#define MyAppVersion "0.1.1"
 #define MyAppPublisher "Allan Marillier, 2024-2025"
 #define MyAppURL "https://github.com/amarillier/img2icons"
 #define MyAppExeName "img2icons.exe"
