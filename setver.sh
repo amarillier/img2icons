@@ -26,8 +26,8 @@ sed -i '' "s/Version = \".*\"/Version = \"$ver\"/" main.go
 echo "FyneApp.toml"
 sed -i '' "s/Version = \".*\"/Version = \"$ver\"/" FyneApp.toml
 
-echo "Inno Setup Inno/KrankyBearImg2Icons.iss"
-sed -i '' "s/MyAppVersion \".*\"/MyAppVersion \"$ver\"/" ./Inno/KrankyBearImg2Icons.iss
+echo "Inno Setup Inno/img2icons.iss"
+sed -i '' "s/MyAppVersion \".*\"/MyAppVersion \"$ver\"/" ./Inno/img2icons.iss
 
 echo "Inno Setup winres/winres.json"
 sed -i '' "s/file_version\":.*/file_version\": \"$ver\",/" ./winres/winres.json
@@ -36,7 +36,7 @@ sed -i '' "s/FileVersion\":.*/FileVersion\": \"$ver\",/" ./winres/winres.json
 sed -i '' "s/ProductVersion\":.*/ProductVersion\": \"$ver\",/" ./winres/winres.json
 
 echo "Info.plist"
-sed -i '' "s/<string>v .*<\/string>/<string>v $ver<\/string>/" ./KrankyBearImg2Icons.app/Contents/Info.plist
+sed -i '' "s/<string>v .*<\/string>/<string>v $ver<\/string>/" ./img2icons.app/Contents/Info.plist
 
 echo "mkAllZip.sh"
 sed -i '' "s/version=\".*\"/version=\"$ver\"/" mkAllZip.sh
@@ -45,5 +45,5 @@ sed -i '' "s/\/.*{flag=1}\//\/$ver\/{flag=1}\//" mkAllZip.sh
 echo "Update license.txt and ReleaseNotes.txt"
 cp license.txt Resources
 cp ReleaseNotes.txt Resources
-cp license.txt KrankyBearImg2Icons.app/Contents/Resources
-cp ReleaseNotes.txt KrankyBearImg2Icons.app/Contents/Resources
+cp license.txt img2icons.app/Contents/Resources
+cp ReleaseNotes.txt img2icons.app/Contents/Resources

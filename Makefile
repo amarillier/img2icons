@@ -46,8 +46,8 @@ run:
 # Supported cross compile GOOS and GOARCH https://gist.github.com/asukakenji/f15ba7e588ac42795f421b48b8aede63
 build:
 	./setver.sh
-	go build -ldflags="-w -s" -o KrankyBearImg2Icons .
-	./setIcon.sh Resources/Images/KrankyBearHardHat.png KrankyBearImg2Icons
+	go build -ldflags="-w -s" -o img2icons .
+	./setIcon.sh Resources/Images/KrankyBearHardHat.png img2icons
 .PHONY:build
 
 
@@ -65,26 +65,26 @@ linuxarm64:
 
 macamd64:
 	GOOS=darwin GOARCH=amd64 CGO_ENABLED=1 go build -ldflags="-w -s" -o bin/MacOSAMD64/
-	# ./setIcon.sh KrankyBearHardHat.png bin/MacOSAMD64/KrankyBearImg2Icons
+	# ./setIcon.sh KrankyBearHardHat.png bin/MacOSAMD64/img2icons
 	./mkicns.sh Resources/Images/KrankyBearHardHat.png
 	# ./dmgbuildIntel.sh
 .PHONY:macamd64
 
 macarm64:
 	GOOS=darwin GOARCH=arm64 CGO_ENABLED=1 go build -ldflags="-w -s" -o bin/MacOSARM64/
-	# ./setIcon.sh KrankyBearHardHat.png bin/MacOSAMD64/KrankyBearImg2Icons
+	# ./setIcon.sh KrankyBearHardHat.png bin/MacOSAMD64/img2icons
 	./mkicns.sh Resources/Images/KrankyBearHardHat.png
 	# ./dmgbuildARM.sh
 .PHONY:macarm64
 
 winamd64:
 	go-winres make
-	GOOS=windows GOARCH=amd64 CGO_ENABLED=1 CC="x86_64-w64-mingw32-gcc" go build -ldflags="-w -s -H windowsgui -r KrankyBearImg2Icons.rc" -o bin/WinAMD64/
+	GOOS=windows GOARCH=amd64 CGO_ENABLED=1 CC="x86_64-w64-mingw32-gcc" go build -ldflags="-w -s -H windowsgui -r img2icons.rc" -o bin/WinAMD64/
 .PHONY:winamd64
 
 winarm64:
 	go-winres make
-	GOOS=windows GOARCH=arm64 CGO_ENABLED=1 CC="x86_64-w64-mingw32-gcc" go build -ldflags="-w -s -H windowsgui -r KrankyBearImg2Icons.rc" -o bin/WinARM64/
+	GOOS=windows GOARCH=arm64 CGO_ENABLED=1 CC="x86_64-w64-mingw32-gcc" go build -ldflags="-w -s -H windowsgui -r img2icons.rc" -o bin/WinARM64/
 .PHONY:winarm64
 
 

@@ -1,12 +1,12 @@
-# KrankyBearImg2Icons
+# img2icons
 Below section is not yet relevant, this is command line interface (CLI)
 only for now, and may remain that way.
 
 If I add a GUI component, below will apply
 preferences stored via fyne preferences API land in
-~/Library/Preferences/fyne/com.github.amarillier.KrankyBearImg2Icons/preferences.json
-~\AppData\Roaming\fyne\com.github.amarillier.KrankyBearImg2Icons\preferences.json
-MacOS resource location (sounds and backgrounds): /Applications/KrankyBearImg2Icons.app/Contents/Resources
+~/Library/Preferences/fyne/com.github.amarillier.img2icons/preferences.json
+~\AppData\Roaming\fyne\com.github.amarillier.img2icons\preferences.json
+MacOS resource location (sounds and backgrounds): /Applications/img2icons.app/Contents/Resources
 Theme preferences are in ~/Library/Preferences/fyne/settings.json
 
 

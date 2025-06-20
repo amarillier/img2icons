@@ -1,4 +1,4 @@
-module KrankyBearImg2Icons
+module img2icons
 
 go 1.24.2
 
