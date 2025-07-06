@@ -1,9 +1,5 @@
 package main
 
-// update-alternatives --config editor
-// sudo systemctl set-default multi-user.target
-// add tanium to /etc/group sudo group
-
 import (
 	"flag"
 	"fmt"
@@ -32,6 +28,11 @@ var appCopyright = "Copyright (c) Allan Marillier, 2024-" + strconv.Itoa(time.No
 func main() {
 	var sizes []uint
 	var img image.Image
+
+	flag.Usage = func() {
+		fmt.Fprintf(os.Stderr, "Usage of %s:\n", os.Args[0])
+		flag.PrintDefaults()
+	}
 
 	// Define the command-line flag for the image file name
 	imgFile := flag.String("image", "", "Path to the input image file (png, jpg or bmp)")
