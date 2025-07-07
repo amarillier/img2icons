@@ -1,4 +1,6 @@
 # img2icons
+![KrankyBearBeret](https://github.com/user-attachments/assets/e9c4512f-415c-4881-998e-7644d38110ae)
+
 Below section is not yet relevant, this is command line interface (CLI)
 only for now, and may remain that way.
 
@@ -35,4 +37,11 @@ This tool creates both Windows and MacOS icons very quickly, easily and
     components, this may become a consideration
 
 
+# License
+See license.txt
+This is 100% free for anyone to use or misuse any way you like with no warranty as
+to suitability or anything else, other than it has no viruses when I compile and
+commit to git. But you should always check and scan anything you download from the
+internet for viruses anyway. Don't be reckless.
 
+All KrankyBear icons, images, logos used are copyright (c) Allan Marillier, 2024, 2025 ...
